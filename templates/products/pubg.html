@@ -1,2 +1,14 @@
 {% extends "base.html" %}
-{% block content %}{% endblock content %}
+{% load static %}
+{% block content %}
+<br><br><br><br>
+<h1>{{pro}}</h1>
+<h3>{{pro.content}}</h3>
+<br><br>
+<img src="{{pro.image.url}}" alt="">
+<img src="{% static 'image/PUBG2.jpg' %}" alt="">
+<br><br>
+<h2>{{pro.price}} SR<h2>
+
+<br><br>
+{% endblock content %}
