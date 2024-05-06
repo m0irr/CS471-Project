@@ -1,11 +1,6 @@
 {% extends "base.html" %}
+{% load static %}
 {% block content %}
 <h1> Welcome to Digitals Store</h1>
-{% if Phase == 3 %}
-<h3> This is phase three</h3>
-{% elif Phase > 3 %}
-<h3> You are advanced, wait for others</h3>
-{% else %}
-<h3> You are late , work more</h3>
-{% endif %}
+<img src="{% static 'image/Digitals_store.png' %}" alt="">
 {% endblock content %}

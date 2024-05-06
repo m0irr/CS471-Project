@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
+<br><br><br><br>
 {% for i in pro  %}
 {% if i.name == "YouTube premium" %}
     <span><a href="{% url "youtube" %}"><h1>{{i.name}}</h1></a></span>
@@ -10,9 +11,8 @@
 {% elif i.name == 'Shahid Sport VIP' %}
     <span><a href="{% url "pubg" %}"><h1>{{i.name}}</h1></a></span>
 {% endif %}
-
-<h3>{{i.content}}</h3>
-<h3>{{i.price}} SR</h3>
 <img src="{{i.image.url}}" alt="">
+<h3>{{i.price}} SR</h3>
+<br><br><br><br>
 {% endfor %}
 {% endblock content %}

@@ -5,9 +5,8 @@ def products(request):
     x = Product.objects.all()
     show ={'pro':x}
     return render(request,'products/products.html',show)
-
 def youtube(request):
-    return render(request,'products/youtube.html')
+    return render(request,'products/youtube.html',{'pro':Product.objects.get(name='YouTube premium')})
 def pubg(request):
     return render(request,'products/pubg.html')
 def iptv(request):

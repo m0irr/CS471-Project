@@ -1,8 +1,7 @@
 from django.shortcuts import render
 from .forms import LoginForms
 def home(request):
-    nbPhase = {'Phase':3}
-    return render(request,'store/home.html',nbPhase)
+    return render(request,'store/home.html')
 
 def about(request):
     nb_phase = {'Phase':'three'}
