@@ -6,5 +6,11 @@ def products(request):
     show ={'pro':x}
     return render(request,'products/products.html',show)
 
-def product(request):
-    return render(request,'products/product.html')
+def youtube(request):
+    return render(request,'products/youtube.html')
+def pubg(request):
+    return render(request,'products/pubg.html')
+def iptv(request):
+    return render(request,'products/iptv.html')
+def shahid(request):
+    return render(request,'products/shahid.html')

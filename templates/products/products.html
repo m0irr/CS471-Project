@@ -1,7 +1,16 @@
 {% extends "base.html" %}
 {% block content %}
 {% for i in pro  %}
-<h1>{{i.name}}</h1>
+{% if i.name == "YouTube premium" %}
+    <span><a href="{% url "youtube" %}"><h1>{{i.name}}</h1></a></span>
+{% elif i.name == 'PUBG' %}
+    <span><a href="{% url "pubg" %}"><h1>{{i.name}}</h1></a></span>
+{% elif i.name == 'IPTV' %}
+    <span><a href="{% url "iptv" %}"><h1>{{i.name}}</h1></a></span>
+{% elif i.name == 'Shahid Sport VIP' %}
+    <span><a href="{% url "pubg" %}"><h1>{{i.name}}</h1></a></span>
+{% endif %}
+
 <h3>{{i.content}}</h3>
 <h3>{{i.price}} SR</h3>
 <img src="{{i.image.url}}" alt="">
