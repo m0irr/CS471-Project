@@ -7,4 +7,5 @@ urlpatterns = [
     path('shahid',views.shahid,name='shahid'),
     path('iptv',views.iptv,name='iptv'),
     path('',views.products,name='products'),
+    path('cart',views.cart,name='cart')
 ]

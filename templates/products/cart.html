@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block content %}
+{% if request.GET.products %}
+<h1>Product added to cart: {{ request.GET.products }}</h1>
+{% else %}
+<h1>Your cart is empty.</h1>
+{% endif %}
+{% endblock %}
